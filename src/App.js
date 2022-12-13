@@ -59,7 +59,8 @@ function App() {
           </div>
           <button
             onClick={add}
-            className="bg-green-500 border border-green-700 text-white px-9 py-2 rounded-3xl"
+            className="bg-green-500 border border-green-700 text-white px-9 py-2 rounded-3xl disabled:opacity-70 cursor-pointer"
+            disabled={newTodo===""?true:false}
           >
             ADD
           </button>
